@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EngillEngine.Core", "EngillEngine.Core\EngillEngine.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EngillEngine.Content", "EngillEngine.Content\EngillEngine.Content.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngillEngine.Desktop", "EngillEngine\EngillEngine.Desktop.csproj", "{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}"
 EndProject

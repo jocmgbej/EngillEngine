@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using EngillEngine.Core.Util;
 
 namespace EngillEngine.Core
 {
@@ -11,7 +12,7 @@ namespace EngillEngine.Core
 		/// <summary>
         /// The instance.
         /// </summary>
-		public static Resources instance;
+		private static Resources instance;
 
         /// <summary>
         /// Initializes the resources.
@@ -19,9 +20,10 @@ namespace EngillEngine.Core
         /// <param name="contentManager">Content manager.</param>
         /// <param name="graphicsDeviceManager">Graphics device manager.</param>
         /// <param name="gameWindow">Game window.</param>
-		public static void InitializeResources(ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, GameWindow gameWindow)
+		public static void InitializeResources(ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, IWindow window)
 		{
-			
+			if (instance == null)
+				instance = new Resources(contentManager, graphicsDeviceManager, window);
 		}
 
         /// <summary>
@@ -70,15 +72,40 @@ namespace EngillEngine.Core
 			{
 				return instance.graphicsDeviceManager.GraphicsDevice;
 			}
+		}    
+        
+		public static IWindow Window
+		{
+			get
+			{
+				return instance.window;
+			}
 		}
-                
+
 		private ContentManager contentManager;
 		private GraphicsDeviceManager graphicsDeviceManager;
+		private IWindow window;
 
-		public Resources(ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, GameWindow gameWindow)
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:EngillEngine.Core.Resources"/> class.
+        /// </summary>
+        /// <param name="contentManager">Content manager.</param>
+        /// <param name="graphicsDeviceManager">Graphics device manager.</param>
+        /// <param name="gameWindow">Game window.</param>
+		public Resources(ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, IWindow window)
         {
 			this.contentManager = contentManager;
 			this.graphicsDeviceManager = graphicsDeviceManager;
+			this.graphicsDeviceManager.HardwareModeSwitch = false;
+			this.window = window;
+
+			contentManager.RootDirectory = "Content";
         }
+                
+		public void Update()
+		{
+			window.CheckForEvents();
+		}
     }
 }

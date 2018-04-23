@@ -3,6 +3,9 @@ using Microsoft.Xna.Framework;
 
 namespace EngillEngine.Core.Util
 {
+	/// <summary>
+    /// Window states.
+    /// </summary>
 	public enum WindowStates
 	{
 		WINDOWED,
@@ -10,35 +13,54 @@ namespace EngillEngine.Core.Util
         FULLSCREEN
 	}
 
+    /// <summary>
+    /// On window resize.
+    /// </summary>
 	public delegate void OnWindowResize(Point size);
+
+    /// <summary>
+    /// On window state change.
+    /// </summary>
 	public delegate void OnWindowStateChange(WindowStates newState);
 
-    public interface Window
-    {        
-		event OnWindowResize OnWindowResize
-		{
-			add;
-			remove;
-		}
+    /// <summary>
+    /// Window.
+    /// </summary>
+    public interface IWindow
+    {
+		/// <summary>
+        /// Occurs when window resize.
+        /// </summary>
+		event OnWindowResize OnWindowResize;
 
-		event OnWindowStateChange OnWindowStateChange
-		{
-			add;
-			remove;
-		}
+        /// <summary>
+        /// Occurs when window state change.
+        /// </summary>
+		event OnWindowStateChange OnWindowStateChange;
         
+        /// <summary>
+        /// Gets or sets the size.
+        /// </summary>
+        /// <value>The size.</value>
 		Point Size
 		{
 			get;
 			set;
 		}
 
-		WindowStates States
+        /// <summary>
+        /// Gets or sets the state.
+        /// </summary>
+        /// <value>The state.</value>
+		WindowStates State
 		{
 			get;
 			set;
 		}
 
+        /// <summary>
+        /// Checks for events.
+        /// </summary>
 		void CheckForEvents();
     }
 

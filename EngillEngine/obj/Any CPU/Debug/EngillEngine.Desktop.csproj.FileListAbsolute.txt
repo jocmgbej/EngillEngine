@@ -1,7 +1,5 @@
 /home/jesse/Development/C#/EngillEngine/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csprojResolveAssemblyReference.cache
 /home/jesse/Development/C#/EngillEngine/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csproj.CoreCompileInputs.cache
-/home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csprojResolveAssemblyReference.cache
-/home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csproj.CoreCompileInputs.cache
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll.config
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/x86/SDL2.dll
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/x64/SDL2.dll
@@ -17,5 +15,7 @@
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/EngillEngine.Desktop.pdb
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll
 /home/jesse/Development/C#/EngillEngine/EngillEngine/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.xml
+/home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csproj.CoreCompileInputs.cache
 /home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.exe
 /home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.pdb
+/home/jesse/Development/C#/EngillEngine/EngillEngine/obj/Any CPU/Debug/EngillEngine.Desktop.csprojResolveAssemblyReference.cache

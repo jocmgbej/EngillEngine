@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngillEngine.Desktop", "EngillEngine\EngillEngine.Desktop.csproj", "{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EngillEngine.Core", "EngillEngine.Core\EngillEngine.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EngillEngine.Content", "EngillEngine.Content\EngillEngine.Content.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB49}") = "EngillEngine.Content", "EngillEngine.Content\EngillEngine.Content.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7386}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EngillEngine.Core", "EngillEngine.Core\EngillEngine.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngillEngine.EntityComponentSystem", "EngillEngine.EntityComponentSystem\EngillEngine.EntityComponentSystem.csproj", "{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngillEngine.SceneManagement", "EngillEngine.SceneManagement\EngillEngine.SceneManagement.csproj", "{742D47D1-A588-4C3A-9300-DACDC7166336}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E20D9375-4642-4ADE-8076-BFADD87B6AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSTest", "ECSTest\ECSTest.csproj", "{5798E168-E848-48A7-B2B5-F7611126F8D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,11 +31,38 @@ Global
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Debug|x86.Build.0 = Debug|Any CPU
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Release|x86.ActiveCfg = Release|Any CPU
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Release|x86.Build.0 = Release|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|x86.Build.0 = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|x86.Build.0 = Release|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Debug|x86.Build.0 = Debug|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Release|x86.ActiveCfg = Release|Any CPU
+		{742D47D1-A588-4C3A-9300-DACDC7166336}.Release|x86.Build.0 = Release|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{5798E168-E848-48A7-B2B5-F7611126F8D8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$0.StandardHeader = $2
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5798E168-E848-48A7-B2B5-F7611126F8D8} = {E20D9375-4642-4ADE-8076-BFADD87B6AEE}
 	EndGlobalSection
 EndGlobal

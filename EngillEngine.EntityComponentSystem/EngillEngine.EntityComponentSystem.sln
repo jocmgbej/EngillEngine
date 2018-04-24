@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngillEngine.EntityComponentSystem", "EngillEngine.EntityComponentSystem.csproj", "{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA1D2C5-0717-4C05-BFE0-11744CE0EAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

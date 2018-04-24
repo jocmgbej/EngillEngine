@@ -1,4 +1,10 @@
-﻿using System;
+﻿///@Author  :       Nordel / Chuk95
+///@Date    :       2018-04-22
+///@Purpose :       
+/// Every window should implement this interface this way every window wether its a editor window
+/// or game window should be managed the same way
+
+using System;
 using Microsoft.Xna.Framework;
 
 namespace EngillEngine.Core.Util

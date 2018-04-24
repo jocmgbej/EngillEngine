@@ -1,4 +1,10 @@
-﻿using System;
+﻿///@Author  :       Nordel / Chuk95
+///@Date    :       2018-04-22
+///@Purpose :       
+/// The purpose of this class is to give access to the main resources such as the window
+/// the graphicsdevices scenemanager and content management
+
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -101,11 +107,16 @@ namespace EngillEngine.Core
 			this.window = window;
 
 			contentManager.RootDirectory = "Content";
-        }
-                
+        } 
+        
 		public void Update()
 		{
 			window.CheckForEvents();
+		}
+
+		public void Render()
+		{
+			
 		}
     }
 }

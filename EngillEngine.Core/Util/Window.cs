@@ -1,4 +1,9 @@
-﻿using System;
+﻿///@Author  :       Nordel / Chuk95
+///@Date    :       2018-04-22
+///@Purpose :       
+/// Window implementation of Linux/Macos/Windows gamewindow
+
+using System;
 using Microsoft.Xna.Framework;
 using EngillEngine.Core.Util;
 using System.Diagnostics;
